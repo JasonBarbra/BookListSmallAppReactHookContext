@@ -16,9 +16,9 @@ const BookContextProvider = (props) =>{
         setBooks(books.filter(book => book.id !== id))
     };
     return(
-        <BookContex.Provider value={books,addBook,removeBook}>
+        <BookContext.Provider value={{books,addBook,removeBook}}>
             {props.children}
-        </BookContex.Provider>
+        </BookContext.Provider>
     )
 }
 
